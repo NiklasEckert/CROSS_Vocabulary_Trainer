@@ -1,0 +1,63 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+html {
+  height: 100% !important;
+}
+
+#sectionContent {
+  .btn-voc {
+    width: 100% !important;
+    background-color: #0d6efd;
+    color: white;
+    margin: .5rem 0 .5rem 0;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    line-height: 1.5;
+    text-align: center;
+    padding: .75rem;
+  }
+}
+
+#stats-box {
+  border: 1px solid darkgray;
+  border-radius: .5rem;
+  text-decoration: none;
+  text-align: center;
+  //margin: 2rem;
+
+  .correctly-box {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: darkgreen;
+    font-size: xxx-large;
+    font-weight: bolder;
+  }
+
+  #attempts {
+    font-weight: bold;
+  }
+
+  .attempt-box {
+    margin-bottom: 2rem;
+  }
+}
+
+#btnDecWords {
+  border: 1px solid darkgray;
+  border-radius: .25rem 0 0 .25rem;
+  padding: .35rem .6rem;
+}
+
+#wordsPerGame {
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+  padding: .35rem .6rem;
+}
+
+#btnIncWords {
+  border: 1px solid darkgray;
+  border-radius: 0 .25rem .25rem 0;
+  padding: .35rem .6rem;
+}

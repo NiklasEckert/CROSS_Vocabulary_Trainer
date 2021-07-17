@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<!--    <meta http-equiv="Content-Security-Policy"-->
+<!--          content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <title>Content</title>
+</head>
+<body class="d-flex flex-column h-100">
+
+<div id="deviceready" class="d-flex flex-column h-100">
+
+    <section id="sectionContent" class="d-flex flex-column h-100 container">
+        <div class="row">
+            <div class="col-6">
+                <h2 id="lang1">X</h2>
+                <div id="vocCol1" class="row">
+
+                </div>
+            </div>
+
+            <div class="col-6">
+                <h2 id="lang2">X</h2>
+                <div id="vocCol2" class="row">
+
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div id="btnNewGame" class="btn btn-danger w-100">Neues Spiel</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="sectionStatistic" class="d-none flex-column h-100 container">
+        <h2>Statistik</h2>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="stats-box" class="stats-box">
+                    <div class="stats-text">
+                        <div class="correctly-box">
+                            <span id="correctly">X</span>&nbsp;<i class="far fa-check-circle"></i>
+                        </div>
+                        <div class="attempt-box">
+                            von <span id="attempts">XXX</span> richtig beantwortet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <table id="stats-list" class="stats-list table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Spiel</th>
+                            <th scope="col">Korrekt</th>
+                            <th scope="col">Versuche</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stats-list-body">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 mt-3">
+                <div id="btnStatReset" class="btn btn-danger w-100">
+                    Zurücksetzen
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionSettings" class="d-none flex-column h-100 container">
+        <h2>Einstellungen</h2>
+        <div class="row">
+            <div class="col-12 mb-2">
+                <div class="d-flex justify-content-between">
+                    <span>Wörter pro Spiel:&nbsp;</span>
+                    <div class="d-flex justify-content-start">
+                        <div class="btn btn-info" id="btnDecWords">-</div>
+                        <div id="wordsPerGame">X</div>
+                        <div class="btn btn-info" id="btnIncWords">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-2">
+                <div class="d-flex justify-content-between">
+                    <span>Sprache 1: </span>
+                    <select id="comboLang1" class="form-select w-auto">
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-12 mb-2">
+                <div class="d-flex justify-content-between">
+                    <span>Sprache 2: </span>
+                    <select id="comboLang2" class="form-select w-auto">
+
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto bg-light pt-3 pb-2">
+        <ul class="nav justify-content-evenly">
+            <li class="nav-item">
+                <a id="btnContent" class="text-decoration-none active" aria-current="page">
+                    <div class="fs-2 d-flex justify-content-center">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div>Trainer</div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="btnStatistic" class="text-decoration-none text-muted" aria-current="page">
+                    <div class="fs-2 d-flex justify-content-center">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <div>Statistik</div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="btnSettings" class="text-decoration-none text-muted" aria-current="page">
+                    <div class="fs-2 d-flex justify-content-center">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div>Einstellungen</div>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+<script src="cordova.js"></script>
+<script src="js/btnHandler.js"></script>
+<script src="js/content.js"></script>
+<script src="js/config/trainer.config.js"></script>
+<script src="js/config/vocabulary.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/config/languages.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
